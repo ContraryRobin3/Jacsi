@@ -1,0 +1,97 @@
+body{
+    background: #2F2F2F;
+    margin: 105px auto;
+    font-family: 'Share Tech Mono';
+    color: white;
+}
+h1{
+    text-align: center;
+}
+
+table, th, td{
+    border: 1px solid black;
+    background: #2C3E50;
+    text-align: center;
+}
+td{
+    font-size: 15px;
+}
+
+.budget{
+    text-align: center;
+   
+}
+
+.navbar-inverse {
+	background: #2c3e50;
+	padding: 10px;
+	
+}
+
+.jumbotron h1, .jumbotron p{
+    margin: 10px 20px;
+}
+
+
+.dropdown-menu{
+    font-size: 30px;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: white;
+    font-size: 30px;
+    margin:10px;
+    /*padding: 10px 75px;*/
+    line-height: normal;
+
+} 
+
+.navbar-inverse .navbar-brand{
+    color: white;
+    font-size: 40px;
+    /*padding: 5px 75px;*/
+   
+    line-height: normal;
+}
+.navbar-inverse .navbar-header{
+    /*padding: 5px 75px;*/
+    margin:10px;
+    
+}
+
+/*sets collapse distance*/
+@media (max-width: 1490px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}

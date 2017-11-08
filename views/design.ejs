@@ -1,0 +1,51 @@
+<% include partials/header %>
+<% include partials/nav %>
+
+<div class="container">
+    <h2>The Goal</h2>
+    <p>The goal of this project is to build a autonomous vehicle with a 360° collision avoidance system, 
+    which will keep the driver informed at all times.</p>
+    <hr>
+    <h2>Two Components:</h2>
+    <h3>The RC Autonomous Car</h3>
+    <ul>
+        <li>The goal of this project is to build a autonomous vehicle with a 360° collision avoidance system, 
+    which will keep the driver informed at all times.</li>
+    </ul>
+    <h3>The Remote Control/Driver Alert System (click here)</h3>
+    <ul>
+        <li>Allows the driver to be aware of what it going on at all times</li>
+        <li>Allows for manual override of the system</li>
+    </ul>
+    <hr>
+    <h3>System Accomplishments</h3>
+    <ul>
+        <li>Lane Keeping System</li>
+        <ul>
+            <li>Full 360° collision avoidance</li>
+            <li>Take action if car is in front</li>
+            <li>Take action if car is coming from behind</li>
+            <li>Take action if car is coming from the side</li>
+        </ul>
+        <li>Specific Testing Scenarios</li>
+        <ul>
+            <li>Another car merging</li>
+            <li>Stopping to avoid front collision</li>
+            <li>Another car pulling out at an intersection</li>
+            <li>Car approaching rear while at rest</li>
+        </ul>
+    </ul>
+    <hr>
+    <h3>Lane Keeping System</h3>
+    <ul>
+        <li>Pixy Camera will allow the Pi to collect visual data</li>
+        <li>Data will run through a neural network which will be trained to stay in the lane</li>
+    </ul>
+    <h3>360° Collision Avoidance System</h3>
+    <ul>
+        <li>The radar and ultra sonic sensors will give the car a sense of its surroundings</li>
+        <li>The cars reactions to these sensor will be hard coded in</li>
+    </ul>
+</div>
+
+<% include partials/footer %>

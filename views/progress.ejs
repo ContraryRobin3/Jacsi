@@ -1,0 +1,100 @@
+<% include partials/header %>
+<% include partials/nav %>
+
+
+
+<div class="container">
+    <h1>Progress</h1>
+<div>
+    <h2>August 4, 2017</h2>
+    <p>We met and ordered the rest of the parts and discussed future plans of when we would meet again.</p>
+    <hr>
+</div>
+<div>
+    <h2>August 8, 2017</h2>
+    <p>We met and tested out the car. We then took the car apart and figured out how it worked. We came to the conclusion that we would need to replace the steering 
+    servo in order for it to interface with the Raspberry Pi 3.</p>
+    <hr>
+</div>
+<div>
+    <h2>August 14, 2017</h2>
+    <p>We met and tested the sensors to make sure they were working properly. We also designed the system that would send the sensor information to the Raspberry Pi 3.
+    We decided that we would use two Arduino Pro Minis, one for the front six sensors, and one for the back six sensors. Each sensor would then be given a number 1-6 
+    which would be assigned in a 4-bit binary value. This will allow the Arduino Pro Mini to send the binary value of the sensor that was triggered to the Raspberry Pi 3. 
+    By using 4-bits instead of 3 we get an extra 8 binary values which can be used as special commands, for instance when more then one sensor is triggered. After the 
+    Raspberry Pi 3 receives that a sensor was triggered it will send a command the both of the Arduino Pro Minis, to check all sensors, and will then take the best course of action.
+    We also were able to switch out the steering servo in the car with the new servo we ordered.</p>
+    <hr>
+</div>
+<div>
+    <h2>August 15, 2017</h2>
+    <p>Today we placed the sensors on the car and labeled the wires so that we can easily hook up later.</p>
+    <hr>
+</div>
+<div>
+    <h2>September 6, 2017</h2>
+    <p>After swapping out multiple motors in the RC car, trying to get them to work with the Motor Shield we had bought for the Pi, we decided that the Car we had chosen 
+    was not going to work for our project. We deciding to go shopping for another one, in person rather than online, so that we could ensure that the new one we chose would 
+    have the correct parts that would work with the Raspberry Pi 3 and would give use enough space to fit all of our components. We headed over to Graves R/C Hobbies to 
+    choose the new vessel for J.A.C.S.I. After observing the cars they had to offer, we decided that the Traxxas Slash was the car for us.</p>
+    <hr>
+</div>
+<div>
+    <h2>September 19, 2017</h2>
+    <p>We met up for a quick meeting to solder wires to the ESC and the stering servo so we could easily connect to them. We also installed configured the Pi to run in 
+    terminal mode so that we don’t way it down the Pi with a GUI.</p>
+    <hr>
+</div>
+<div>
+    <h2>September 20, 2017</h2>
+    <p>We met up today to attach the sensors to the new body, and decided to run two Raspberry Pi’s on their own network, rather than the Pi and the two arduinos 
+    to make the communication easier to deal with. We also configured the Pi to run in headless mode so we can control it from an external laptop.</p>
+    <hr>
+</div>
+<div>
+    <h2>September 24, 2017</h2>
+    <p>Today we met up and 3D  printed plastic casings that encase the IR sensors. These cases were then super glued and strapped to the underbelly of the car 
+    securing the sensors below preventing them from any possible damage.</p>
+    <hr>
+</div>
+<div>
+    <h2>September 29, 2017</h2>
+    <p>Today we installed and configured the router, and were able to get both of the Raspberry Pis online and configured for ssh remote control. We also wrote 
+    and tested the code for steering the car manually.</p>
+    <hr>
+</div>
+<div>
+    <h2>September 30, 2017</h2>
+    <p>Today we were wrote the code for controlling the motor and uploaded it to the Arduino Pro Mini. After some fixing some issues with the ESC we were finally 
+    able to get the motor to turn on command.</p>
+    <hr>
+</div>
+<div>
+    <h2>October 3, 2017</h2>
+    <p>Today we met and mounted the power bank making are car completely wireless so that we could do a speed test and see how it actually moved. Before this we wrote 
+    some code for the Raspberry Pi so that it could communicate with the Arduino Pro Mini, through Serial, and control the Motor. Once that was up an running we were 
+    able to test it. The Results were as expected all of the extra weight on the Car caused it to drag on the floor at much lower speeds. The speeds were not an issue 
+    since we are planning on testing it at lower speeds, however the dragging presents a possible issue since the IR sensors are on the bottom of the Car. We made note 
+    of the is issue so that we could keep an eye on it and research a fix.</p>
+    <hr>
+</div>
+<div>
+    <h2>October 4, 2017</h2>
+    <p>Today we met up with one goal, “Gain complete control of the car remotely.” This is an important step because in order to have J.A.C.S.I. drive herself we first 
+    have to give her data on how to do so. This means that the manual control needs to be responsive and easy for us to use so that we can give J.A.C.S.I good training 
+    data. With this goal in mind we decided to attempt keyboard control. We wrote the code and sent it to the Raspberry Pi and began to test it.</p>
+     <p>This worked relatively well, however, because we were controlling through the terminal, the code that we had to use for retrieving the input did not allow for the absence of 
+     input. This meant that instead to the car centering and stopping when there was no input, it continued in the direction it was going. The fact that the keyboard keys 
+     only give a off or on signal also meant that we had less accuracy when turning. This made it hard for us to control and actually lead to us breaking two of the IR sensor 
+     guards, thankfully they protected the sensor from being damaged, granted part of the reason for this was due to the issue we mentioned earlier, with the car dragging. 
+     We then proceed o try and find a solution to both the control issue and the dragging issue.To tackle the dragging issue we met up with Valencia Lab Assistant Johntavious, 
+     who happens to be a RC car enthusiast. After looking over our car, he suggested that we replace the shock oil, which should fix the problem.To fix the control issue we 
+     were going to need to be a bit more creative. We then had the idea that instead of a keyboard we might could use a game controller of some sort. A game controller would 
+     allow for more steering precision and variable speeds. With this new Idea in mind we started to research how to implement it and finally after a few drivers and some 
+     code adjustments we were up and running. We had control over the car with a Xbox 360 controller.</p>
+    
+    <hr>
+</div>
+</div>
+
+<% include partials/footer %>

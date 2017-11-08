@@ -1,0 +1,18 @@
+{
+  "name": "jacsi",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+   
+  },
+  "author": "contraryRobin3",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}
